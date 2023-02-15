@@ -1,0 +1,146 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+}
+.nav a{
+    list-style: none;
+    text-decoration: none;
+}
+.nav .brand-logo sup i, .travigo sup i{
+color: var(--primary-color);
+font-size: small;
+}
+
+.routes ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 450;
+    font-size: 0.9rem;
+}
+.routes ul li a{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.route::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    background-color: var(--primary-color);
+    height: 2px;
+    bottom: -4px;
+    margin: 0 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.active::after{
+    width: 3%;
+}
+
+.route:hover::after{
+    width: 3%;
+}
+
+.routes ul i{
+    color: var(--primary-color);
+    font-size: xx-small;
+    height: 100%;
+    line-height: 100%;
+    margin-left: 0.5rem;
+}
+
+.auth-actions{
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 450;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.sign-up, .sign-in{
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+.sign-up{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: var(--background-color);
+}
+.sign-in:hover{
+    background-color: var(--primary-color-20);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+/* Responsive */
+@media (max-width: 764px) {
+    .nav{
+        padding: 1.2rem;
+    }
+    .nav .brand-logo sup i, .travigo sup i{
+        color: var(--primary-color);
+        font-size: x-small;
+    }
+    .brand-logo h2{
+        font-size: 1rem;
+    }
+    .routes{
+        margin-left: 0.5rem;
+    }
+    .routes ul{
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+    .sign-up, .sign-in{
+        padding: 5px 10px;
+        border-radius: 50px;
+    }
+    .auth-actions{
+        gap: 1rem;
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 530px){
+    .nav{
+        flex-wrap: wrap;
+    }
+    .brand-logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .routes{
+        width: 100%;
+        margin: 1.5rem auto;
+        justify-content: space-between;
+    }
+    .routes ul{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .auth-actions{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 3rem;
+
+    }
+    .auth-actions a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .sign-in{
+        border: 0.5px solid var(--secondary-color);
+        border-radius: 5rem;
+    }
+}

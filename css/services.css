@@ -1,0 +1,71 @@
+.services{
+    margin: 2rem 8.5rem;
+}
+
+.services > h4{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 650;
+    letter-spacing: 0.1em;
+}
+
+.services-content{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: 1rem;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.services-content img{
+    width: 18%;
+}
+
+.services-content p{
+    margin-top: 1rem;
+}
+
+.try-service-content h1{
+    font-size: 2rem;
+    color: black;
+}
+.try-service-content{
+    align-self: flex-start;
+}
+.choice-service-content{
+    align-self: flex-start;
+}
+.tour-guide-service-content{
+    align-self: flex-end;
+}
+.pass-book-service-content{
+    align-self: flex-start;
+}
+.try-service-content:hover, .choice-service-content:hover, .tour-guide-service-content:hover, .pass-book-service-content:hover{
+    transform: translateY(5px);
+}
+
+@media (max-width: 1024px) {
+    .services{
+        margin: 2rem 5rem;
+    }
+}
+@media (max-width: 768px) {
+    .services{
+        margin: 1rem 2rem;
+    }
+    .services-content{
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .services-content img{
+        width: 8%;
+    }
+    .try-service-content h1{
+        font-size: 1.5rem;
+    }
+    .services-content h2{
+        font-size: 1.2rem;
+    }
+}

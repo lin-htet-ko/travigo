@@ -1,0 +1,67 @@
+.quote{
+    background-color: var(--secondary-color-20);
+    margin: 2rem 8rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.quote *{
+    background-color: transparent;
+}
+.quote h2{
+    font-size: 2.5rem;
+    font-weight: 650;
+    text-align: center;
+    padding: 0 5rem;
+}
+.quote p{
+    margin-top: 1rem;
+}
+#get-started{
+    margin-top: 1.2rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--primary-color);
+    font-weight: 500;
+    color: var(--element-background);
+    transition: 2s;
+}
+#get-started:hover{
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .quote{
+        margin: 0rem 5rem;
+        padding: 3rem;
+    }
+    .quote h2{
+        font-size: 2rem;
+        font-weight: 620;
+        padding: 0 4rem;
+    }
+    #get-started{
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .quote{
+        margin: 0rem 2rem;
+        padding: 3rem;
+        margin-top: 1rem;
+    }
+    .quote h2{
+        font-size: 1.5rem;
+        font-weight: 620;
+        padding: 0 2rem;
+    }
+    #get-started{
+        padding: 0.5rem 1rem;
+    }
+}

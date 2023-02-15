@@ -1,0 +1,96 @@
+.what-they-say{
+    margin: 0rem 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.what-they-say-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.what-they-say-cover{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what-they-say-content h2{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.what-they-say-desc{
+    margin-top: 1.8rem;
+    opacity: 0.8;
+    font-weight: 300;
+}
+.what-they-say-cover > img{
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+    transition: 3s;
+    background-color: transparent;
+}
+.what-they-say-cover > img:hover{
+    transform: rotate(360deg);
+}
+.what-they-say-user{
+    margin-top: 1rem;
+}
+.what-they-say-username{
+    margin-right: 1rem;
+}
+.what-they-say-stars{
+    margin-top: 0.5rem;
+}
+.what-they-say-stars i{
+    color: yellow;
+    font-size: 1rem;
+}
+@media (max-width:1024px) {
+    .what-they-say{
+        margin: 0rem 5rem;
+    }
+    .content-header{
+        font-size: 1rem;
+    }
+    .what-they-say-content h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .what-they-say{
+        margin: 0rem 2rem;
+        flex-wrap: wrap;
+    }
+    .what-they-say-content{
+        width: 100%;
+    }
+    .what-they-say-cover{
+        width: 100%;
+    }
+    .what-they-say-content h2{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .what-they-say-content p{
+        font-size: smaller;
+        margin-top: 0.5rem;
+    }
+    .what-they-say h4{
+        margin-top: 2rem;
+    }
+    .what-they-say-username, .what-they-say-category{
+        font-size: 0.8rem;
+    }
+    .what-they-say-stars i{
+        font-size: 0.8rem;
+    }
+    .what-they-say-cover > img{
+        width: 100%;
+        height: 50vh;
+        object-fit: contain;
+    }
+
+}

@@ -1,0 +1,170 @@
+.cover{
+    width: 100%;
+    display: flex;
+    padding: 2rem 8.5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cover-content{
+    width: 50%;
+}
+.cover-imgs{
+    width: 50%;
+}
+.cover-title-icon img{
+    width: 24px;
+    border-radius: 50%;
+    align-self: center;
+}
+.cover-title-icon{
+    background-color: var(--secondary-color-20);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 50%;
+}
+.cover-title-icon span{
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+.cover-title{
+    font-size: 4.5rem;
+    margin-top: 1.5rem;
+}
+.cover-tilte-content{
+    margin-top: 1.5rem;
+    font-weight: 300;
+}
+.cover-location, .cover-booking-date, .cover-location *, .cover-booking-date *{
+    background-color: var(--element-background);
+}
+.cover-location label, .cover-booking-date label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.cover-location i, .cover-booking-date i{
+    color: var(--primary-color);
+    font-size: xx-small;
+    margin-left: 5px;
+}
+input::-webkit-calendar-picker-indicator,input::-webkit-inner-spin-button{
+    display: none;
+}
+
+.cover-location select, .cover-booking-date input{
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    outline: none;
+    appearance: none;
+}
+
+
+.cover-content form{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--element-background);
+    padding: 15px 30px;
+    border-radius: 50px;
+    column-gap: 0.1rem;
+}
+.cover-content form > i{
+    margin-right: 20px;
+    color: var(--secondary-color-variant);
+    background-color: var(--element-background);
+    font-size: 1.3rem;
+}
+.cover-content form button[type="submit"]{
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 50px;
+    /* margin-left: 10px; */
+}
+.cover-content form button[type="submit"] i{
+    color: var(--element-background);
+    background-color: var(--primary-color);
+    margin: 15px;
+    font-size: large;
+}
+
+.cover-img{
+    width: 100%;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cover{
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    .cover-title{
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    .cover-title-icon{
+        padding: 8px 18px;
+        max-width: 60%;
+    }
+    .cover-tilte-content{
+        margin-top: 1rem;
+        font-size: small;
+    }
+    .cover-location i, .cover-booking-date i{
+        font-size: x-small;
+        margin-left: 3px;
+    }
+    .cover-location label span, .cover-booking-date label span{
+        font-size: small;
+    }
+    .cover-location select, .cover-booking-date input{
+        font-size: 0.6rem;
+        font-weight: 450;
+    }
+    .cover-content form{
+        width: 100%;
+        padding: 10px 25px;
+    }
+    .cover-content form > i{
+        margin-right: 15px;
+        font-size: smaller;
+    }
+    .cover-content form button[type="submit"] i{
+        margin: 8px;
+        font-size: small;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .cover{
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cover-content{
+        width: 100%;
+    }
+    .cover-imgs{
+        display: flex;
+        width: 100%;
+    }
+    .cover-title{
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+
+}
+@media (max-width: 480px) {
+    .cover-title-icon{
+        max-width: 90%;
+    }
+}
